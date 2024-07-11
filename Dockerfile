@@ -8,7 +8,7 @@ RUN apk add php8-gd php8-zlib php8-curl
 COPY server/etc/nginx /etc/nginx
 COPY server/etc/php /etc/php8
 COPY src /usr/share/nginx/html
-RUN mkdir /var/run/php
+#RUN mkdir /var/run/php
 EXPOSE 80
 EXPOSE 443
 STOPSIGNAL SIGTERM
